@@ -11,7 +11,7 @@ rm("x")
 #Plot 4 
 png("./plot4.png",width=480,height=480)
 par(mfrow=c(2,2),cex.axis=1,cex.lab=1,mar=c(4,4,2,1),mgp=c(2,.5,0))
-with(e2,plot(Date_Time,Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=""))
+with(e2,plot(Date_Time,Global_active_power,type="l",ylab="Global Active Power",xlab=""))
 with(e2,plot(Date_Time,Voltage,type="l",ylab="Voltage",xlab="datetime"))
 with(e2, plot(Date_Time,Sub_metering_1,xlab="",ylab="Energy sub metering",type = "l"))
 with(e2,lines(Date_Time,Sub_metering_2, col = "red"))
